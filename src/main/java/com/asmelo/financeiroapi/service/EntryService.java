@@ -11,7 +11,7 @@ import java.util.List;
 public class EntryService {
 
     public List<Entry> getEntries() {
-        Entry entry1 = new Entry(Instant.now(), new BigDecimal(10), "Pão");
+        Entry entry1 = new Entry(Instant.now(), new BigDecimal(10), "Mamão");
         Entry entry2 = new Entry(Instant.now(), new BigDecimal(20), "Leite");
         Entry entry3 = new Entry(Instant.now(), new BigDecimal(30), "Café");
 

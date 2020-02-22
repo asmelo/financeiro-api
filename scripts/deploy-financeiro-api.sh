@@ -1,6 +1,6 @@
 sudo killall -9 java
 sudo chown -R ec2-user:ec2-user /home/ec2-user/projetos/financeiro-api
-sudo chmod 775 /home/ec2-user/projetos/financeiro-api/script/*
+sudo chmod 775 /home/ec2-user/projetos/financeiro-api/scripts/*
 cd /home/ec2-user/projetos/financeiro-api
 mvn clean install
 screen -dm -S FINANCEIRO-API java -jar /home/ec2-user/projetos/financeiro-api/target/financeiro-api-0.0.1-SNAPSHOT.jar

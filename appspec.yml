@@ -4,7 +4,5 @@ files:
   - source: /
     destination: /home/ec2-user/projetos/financeiro-api/
 hooks:
-  BeforeInstall:
-    - location: scripts/stop-financeiro-api.sh
   AfterInstall:
     - location: scripts/deploy-financeiro-api.sh

@@ -1,8 +1,22 @@
 version: 0.0
 os: linux
+
 files:
   - source: /
     destination: /home/ec2-user/projetos/financeiro-api/
+
+permissions:
+  - object: /
+    pattern: "**"
+    owner: ec2-user
+    group: ec2-user
+
 hooks:
-  AfterInstall:
-    - location: scripts/deploy-financeiro-api.sh
+  ApplicationStop:
+    - location: scripts/server-stop.sh
+      timeout: 20
+      runas: ec2-user
+  ApplicationStart:
+    - location: scripts/server-start.sh
+      timeout: 20
+      runas: ec2-user

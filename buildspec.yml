@@ -12,3 +12,6 @@ phases:
 artifacts:
   files:
     - target/financeiro-api-0.0.1-SNAPSHOT.jar
+    - scripts/server-stop.sh
+    - scripts/server-start.sh
+    - appspec.yml

@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 
 files:
-  - source: target/my-app-1.0-SNAPSHOT.jar
+  - source: target/financeiro-api-0.0.1-SNAPSHOT.jar
     destination: /tmp
 
 hooks:

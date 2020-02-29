@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-cd /tmp
+cd /home/ec2-user/deployment
 sudo java -jar -Dserver.port=8080 \
     *.jar > /dev/null 2> /dev/null < /dev/null &

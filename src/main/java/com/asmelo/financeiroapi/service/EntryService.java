@@ -9,7 +9,7 @@ import java.util.List;
 
 @Service
 public class EntryService {
-
+//teste commit
     public List<Entry> getEntries() {
         Entry entry1 = new Entry(Instant.now(), new BigDecimal(10), "Abacate2");
         Entry entry2 = new Entry(Instant.now(), new BigDecimal(20), "Leite");
